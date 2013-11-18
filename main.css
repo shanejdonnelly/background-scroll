@@ -1,0 +1,89 @@
+body{ margin:0;  }
+.no-touch body{ background:#000; }
+h1, h2, h3, h4, h5, h6, p{ color:#000000; }
+
+#wrapper{ max-width:100%; margin-left:0;}
+#wrapper{ visibility:hidden; }
+a{ color:#444; text-decoration:none; }
+a:hover{ color:#000; }
+a:visited{ color:#444; }
+
+.easeinout{ 
+  -webkit-transition: all 0.75s ease-in-out; 
+     -moz-transition: all 0.75s ease-in-out; 
+       -o-transition: all 0.75s ease-in-out; 
+          transition: all 0.75s ease-in-out; 
+}
+#loader{ display:block; position:fixed; top:50%; left:50%; margin-left:-45px; margin-top:-45px; }
+.container{ position:relative; }
+.top-spacer{ height:300px; }
+.bottom-spacer{ height:0; }
+
+#scroll-down-btn{ cursor:pointer; margin:0px; opacity:0.6; top:auto; position:fixed; left:50%; margin-left:100px; bottom:2%; z-index:1; }
+#scroll-down-btn:hover{ opacity: 1; }
+.marker{ height:1px; }
+
+section{ position:relative;overflow:hidden; }
+.content-block{ max-width:1250px; position:relative; margin:0 auto; } 
+
+.bg_wrap{ width:100%; top:0; left:0; z-index:-1; overflow:hidden; }
+.bg{ position:relative; top:0;  z-index:-1;  display:block; }
+
+.content{ width:400px; background:white;height:400px; font-size:25px; line-height:40px; padding:20px; }
+
+/************************************************************************** 
+ *
+ * Backgrounds - set Z-Index 
+ *
+ *************************************************************************/ 
+#bg_0{ z-index:-1; background:transparent no-repeat; }
+#bg_1{  z-index:-2; background:transparent no-repeat; }
+#bg_2{  z-index:-3; background:transparent no-repeat; }
+#bg_3{  z-index:-4; background:transparent no-repeat; }
+#bg_4{  z-index:-5; background:transparent no-repeat;  }
+
+
+/************************************************************************** 
+ *
+ * Tablet and down 
+ *
+ *************************************************************************/
+@media only screen
+and (max-width: 1024px){
+    section{ margin-left:0; }
+    .bg{ top:45px; }
+    #scroll-down-btn{ margin-left:-22px; }
+    #loader{ margin-left:-45px; }
+}
+
+/************************************************************************** 
+ *
+ * Portrait Tablet
+ *
+ *************************************************************************/
+@media only screen
+and (max-width: 768px)
+and (min-width: 481px){ 
+    .bg{ margin-left:-300px; } 
+}
+
+/************************************************************************** 
+ *
+ * Landscape phones and down 
+ *
+ *************************************************************************/
+@media only screen
+and (max-width: 480px){
+    .bg{ box-shadow:none; }
+    #scroll-down-btn{ margin-top:10px; }
+}
+
+/************************************************************************** 
+ *
+ * Portrait phones 
+ *
+ *************************************************************************/
+@media only screen
+and (max-width: 320px){
+    .bg{ margin-left:-150px; }
+}
