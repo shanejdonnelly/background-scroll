@@ -44,6 +44,7 @@
                             var 
                             $bg_wrap = $('<div class="bg_wrap" id="bg_wrap_'+ index +'" style="width:100%; top:0; left:0; z-index:'+ ((index+1) * -1) +'; overflow:hidden;">'),
                             $img = $('<img src="'+ base.settings.images_src[index] +'" class="bg" id="bg_'+ index +'" style="position:relative; z-index:'+ ((index+1) * -1) +';  display:block;"/>'),
+                            $shadow = $('<div class="shadow">&nbsp;</div>'),
                             $top_spacer = $('<div class="top-spacer"></div>'),
                             $top_marker = $('<div class="marker top-marker">&nbsp;</div>'),
                             $bottom_spacer = $('<div class="bottom-spacer" style="height:1px;"></div>'),
@@ -56,7 +57,8 @@
                             $(this).append($bottom_marker).append($bottom_spacer);
                             //put image into .bg_wrap
                             $bg_wrap.append($img);
-                            $(this).after($bg_wrap);
+                            $(this).after($shadow);
+                            $(this).after($bg_wrap); 
                         });
                         //
 
