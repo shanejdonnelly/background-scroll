@@ -1,4 +1,17 @@
-;(function ( $, window, document, undefined ) {
+/*
+ * Background Scroll - jQuery plugin for parallax like background scrolling
+ *
+ * Copyright (c) 2013 Shane Donnelly
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Project home:
+ * http://shanejdonnelly.github.io/background-scroll*
+ * Version:  1.0
+ *
+ */
+ ;(function ( $, window, document, undefined ) {
 
 		// Create the defaults once
 		var 
