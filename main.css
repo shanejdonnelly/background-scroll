@@ -37,11 +37,11 @@ section{ position:relative;overflow:hidden; }
  * Backgrounds - set Z-Index 
  *
  *************************************************************************/ 
-#bg_0{ z-index:-1; background:transparent no-repeat; }
-#bg_1{  z-index:-2; background:transparent no-repeat; }
-#bg_2{  z-index:-3; background:transparent no-repeat; }
-#bg_3{  z-index:-4; background:transparent no-repeat; }
-#bg_4{  z-index:-5; background:transparent no-repeat;  }
+#bg_0{ z-index:-10; background:transparent no-repeat; }
+#bg_1{  z-index:-20; background:transparent no-repeat; }
+#bg_2{  z-index:-30; background:transparent no-repeat; }
+#bg_3{  z-index:-40; background:transparent no-repeat; }
+#bg_4{  z-index:-50; background:transparent no-repeat;  }
 
 
 /************************************************************************** 
