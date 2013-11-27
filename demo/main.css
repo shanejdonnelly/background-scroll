@@ -29,7 +29,7 @@ section{ position:relative;overflow:hidden; }
 .bg_wrap{ width:100%; top:0; left:0; z-index:-1; overflow:hidden; }
 .bg{ position:relative; top:0;  z-index:-1;  display:block; }
 
-.content{ width:400px; background:white;height:400px; font-size:25px; line-height:40px; padding:20px; }
+.content{ width:400px; background:white; font-size:25px; line-height:40px; padding:20px; }
 
 /************************************************************************** 
  *
